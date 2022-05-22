@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  oracle:
+    image: gvenzl/oracle-xe:18
+    ports:
+      - 1521:1521
+    environment:
+      - APP_USER=pp
+      - APP_USER_PASSWORD=eHwc964LkfHv9fEQamPtTGc
+      - ORACLE_RANDOM_PASSWORD=true
+    volumes:
+      - ./data:/opt/oracle/oradata
+
+  nosql:
+    image: ghcr.io/oracle/nosql:19.5-ce
+    ports:
+      - 8080:8080
+      - 5000:5000
+      - 5001:5001
+      - 5999:5999
+      - 5010-5020:5010-5020
+    environment:
+      - KV_PROXY_PORT=8080
+    # volumes:
+    #   -
