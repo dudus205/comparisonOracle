@@ -1,4 +1,3 @@
-SET DEFINE OFF
 
 INSERT INTO PARKING (ID, ADDRESSID, DEALERSHIPID) 
 VALUES (1, 141, 19);
@@ -900,4 +899,3 @@ VALUES (299, 879, 81);
 INSERT INTO PARKING (ID, ADDRESSID, DEALERSHIPID) 
 VALUES (300, 762, 65);
 
--- Import Data into table PARKING from file C:\Users\Piotr\Downloads\MOCK_DATA (7).csv . Task successful and sent to worksheet.

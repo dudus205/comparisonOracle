@@ -1,4 +1,4 @@
-SET DEFINE OFF
+--SET DEFINE OFF
 
 INSERT INTO ADDRESS (ID, STREET, STREETNUMBER, CITY, POSTALCODE, COUNTRY) 
 VALUES (1, 'Village Green', '77454', 'Puerto López', '55319-334', 'Colombia');
@@ -2999,5 +2999,8 @@ VALUES (999, 'Pennsylvania', '8', 'Maraial', '27808-023', 'Brazil');
 
 INSERT INTO ADDRESS (ID, STREET, STREETNUMBER, CITY, POSTALCODE, COUNTRY) 
 VALUES (1000, 'Westend', '131', 'Maloye Verevo', '50383-667', 'Russia');
+
+INSERT INTO ADDRESS (ID, STREET, STREETNUMBER, CITY, POSTALCODE, COUNTRY) 
+VALUES (1001, 'Village Green', '77454', 'Puerto López', '55319-334', 'Colombia');
 
 -- Import Data into table ADDRESS from file C:\Users\Piotr\Downloads\MOCK_DATA (1).csv . Task successful and sent to worksheet.

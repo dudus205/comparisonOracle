@@ -1,7 +1,7 @@
-SET DEFINE OFF
+
 
 INSERT INTO DEALERSHIP (ID, NAME, ADDRESSID) 
-VALUES (1, 'O''Keefe LLC', 9);
+VALUES (1, 'O Keefe LLC', 9);
 
 INSERT INTO DEALERSHIP (ID, NAME, ADDRESSID) 
 VALUES (2, 'Schinner Group', 10);
@@ -109,7 +109,7 @@ INSERT INTO DEALERSHIP (ID, NAME, ADDRESSID)
 VALUES (36, 'Johns, Bahringer and Keebler', 7);
 
 INSERT INTO DEALERSHIP (ID, NAME, ADDRESSID) 
-VALUES (37, 'O''Connell LLC', 6);
+VALUES (37, 'O Connell LLC', 6);
 
 INSERT INTO DEALERSHIP (ID, NAME, ADDRESSID) 
 VALUES (38, 'Emard LLC', 9);
@@ -299,5 +299,3 @@ VALUES (99, 'Dooley, Toy and Hodkiewicz', 10);
 
 INSERT INTO DEALERSHIP (ID, NAME, ADDRESSID) 
 VALUES (100, 'Stokes-Carter', 9);
-
--- Import Data into table DEALERSHIP from file C:\Users\Piotr\Downloads\MOCK_DATA (4).csv . Task successful and sent to worksheet.

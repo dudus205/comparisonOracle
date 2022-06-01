@@ -1,4 +1,3 @@
-SET DEFINE OFF
 
 INSERT INTO FEEDBACK (ID, DESCRIPTION, EMPLOYEEID, CUSTOMERID) 
 VALUES (1, '3', 221, 792);
@@ -600,4 +599,3 @@ VALUES (199, '1', 22, 800);
 INSERT INTO FEEDBACK (ID, DESCRIPTION, EMPLOYEEID, CUSTOMERID) 
 VALUES (200, '9', 306, 613);
 
--- Import Data into table FEEDBACK from file C:\Users\Piotr\Downloads\MOCK_DATA (12).csv . Task successful and sent to worksheet.

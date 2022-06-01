@@ -1,4 +1,3 @@
-SET DEFINE OFF
 
 INSERT INTO EMPLOYEE (ID, NAME, SURNAME, ADDRESSID, DEALERSHIPID) 
 VALUES (1, 'Lacy', 'Cramphorn', 247, 3);
@@ -1360,7 +1359,7 @@ INSERT INTO EMPLOYEE (ID, NAME, SURNAME, ADDRESSID, DEALERSHIPID)
 VALUES (453, 'Willem', 'Speedin', 43, 6);
 
 INSERT INTO EMPLOYEE (ID, NAME, SURNAME, ADDRESSID, DEALERSHIPID) 
-VALUES (454, 'Jorgan', 'O''Lenane', 84, 1);
+VALUES (454, 'Jorgan', 'OLenane', 84, 1);
 
 INSERT INTO EMPLOYEE (ID, NAME, SURNAME, ADDRESSID, DEALERSHIPID) 
 VALUES (455, 'Noe', 'Degoey', 145, 5);
@@ -1500,4 +1499,3 @@ VALUES (499, 'Kelvin', 'Cotesford', 90, 5);
 INSERT INTO EMPLOYEE (ID, NAME, SURNAME, ADDRESSID, DEALERSHIPID) 
 VALUES (500, 'Lara', 'Willmott', 55, 1);
 
--- Import Data into table EMPLOYEE from file C:\Users\Piotr\Downloads\MOCK_DATA (5).csv . Task successful and sent to worksheet.

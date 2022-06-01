@@ -1,6 +1,6 @@
 CREATE TABLE AUCTION (
     Id integer,
-    Expiry date,
+    Expiry string,
     VehicleId integer,
     WinnerId integer,
     EmployeeId integer,
@@ -22,7 +22,7 @@ CREATE TABLE BID (
     Bid double,
     AuctionId integer,
     CustomerId integer,
-    Creation date,
+    Creation string,
     PRIMARY KEY (Id)
 ) ;
 
@@ -60,7 +60,7 @@ CREATE TABLE FEEDBACK (
 
 CREATE TABLE INVOICE (
     Id integer,
-    SellDate date,
+    Selldate string,
     EmployeeId integer,
     CustomerId integer,
     TIN string,
@@ -87,7 +87,7 @@ CREATE TABLE Parking (
 CREATE TABLE VEHICLE (
     Id integer,
     Name string,
-    ManufactureDate date,
+    Manufacturedate string,
     Manufacturer string,
     CountryOfOrigin string,
     OwnersCount integer,
