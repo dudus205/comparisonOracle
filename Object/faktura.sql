@@ -31,20 +31,32 @@ CREATE OR REPLACE TYPE BODY polskafaktura AS
     END;
     MEMBER PROCEDURE DRUKUJ IS
     BEGIN
-        DBMS_OUTPUT.PUT_LINE(SELF.DATA || ' ' || SELF.KWOTANETTO || ' ' || 'Stawka VAT: ' || SELF.STAWKAVAT ||
+        DBMS_OUTPUT.PUT_LINE(SELF.DATA ||
+                             ' Faktura PL ' ||
+                             SELF.KWOTANETTO ||
+                             ' ' ||
+                             'Stawka VAT: ' ||
+                             SELF.STAWKAVAT ||
                              SELF.WYLICZBRUTTO);
     END;
 END;
 
 CREATE OR REPLACE TYPE niemieckafaktura UNDER polskafaktura
 (
-    OVERRIDING MEMBER FUNCTION STAWKAVAT RETURN INT
+    OVERRIDING MEMBER FUNCTION STAWKAVAT RETURN INT,
+    OVERRIDING MEMBER PROCEDURE DRUKUJ
 ) instantiable not final;
 
 CREATE OR REPLACE TYPE BODY niemieckafaktura AS
     OVERRIDING MEMBER FUNCTION STAWKAVAT RETURN INT IS
     BEGIN
         RETURN 19;
+    END;
+    OVERRIDING MEMBER PROCEDURE DRUKUJ IS
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE(SELF.DATA || ' Faktura DE ' || SELF.KWOTANETTO || ' ' || 'Stawka VAT: ' ||
+                             SELF.STAWKAVAT ||
+                             SELF.WYLICZBRUTTO);
     END;
 END;
 
